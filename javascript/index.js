@@ -32,7 +32,7 @@ game.addEventListener('click', function (e) {
     let evvent = e.target.innerHTML
     evvent = "**"
 
-    if (screen.value.endsWith("^")){
+    if (screen.value.endsWith("*")){
         
     } else {
         screen.value += evvent
@@ -53,7 +53,7 @@ function deletee() {
 function goal(e) {
     let evvent = e.target.innerHTML
 
-    if (screen.value.endsWith("&pi;")){
+    if (screen.value.endsWith("3.142")){
 
 
     } else {
