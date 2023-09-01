@@ -1,0 +1,106 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+:root{
+    --color-primary:#9b9292;
+    --color-secondary:#000;
+    --color-new:#414040cb;
+    --color-link:#e0aa14;
+    --font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --font-size-body:1.7rem;
+}
+
+body{
+    background-color: var(--color-primary);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    
+}
+
+.container{
+    /* width: 300px; */
+    background-color: var(--color-secondary);
+    border-radius: 50px;
+    padding: 10px 20px 20px;
+    border: 3px solid #fff;
+}
+
+.container form{
+    height: 40px;
+    width: 305px;
+    margin: 5rem 0;
+}
+
+.container input{
+    width: 100%;
+    outline: none;
+    text-align: right;
+    font-size: 3rem;
+    pointer-events: none;
+    color: #fff;
+    background-color: #000;
+    border: none;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+}
+
+
+button{
+    margin: 1rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 2.4rem;
+    border: none;
+    color: #fff;
+    background-color: var(--color-new);
+}
+
+.zero{
+    border-radius: 100px;
+    padding: 0 12rem 0 2rem;
+}
+
+.shoe{
+    color: #000;
+    background-color: var(--color-primary);
+}
+
+.norms{
+    background-color: var(--color-link);
+}
+
+
+/* responsive */
+@media screen and (min-width:768px) and (max-width:1024px){
+    .container{
+        width: 400px;
+    }
+    
+}
+
+
+@media screen and (min-width:501px) and (max-width:768px){
+    .container{
+        width: 380px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .container{
+        width: 400px;
+    }
+}
