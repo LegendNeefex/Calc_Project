@@ -30,9 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 game.addEventListener('click', function (e) {
     let evvent = e.target.innerHTML
+    evvent = "**"
 
     if (screen.value.endsWith("^")){
-
+        
     } else {
         screen.value += evvent
     }
