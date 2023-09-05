@@ -32,10 +32,9 @@ game.addEventListener('click', function (e) {
     let evvent = e.target.innerHTML
     evvent = "**"
 
-    if (screen.value.endsWith("*")){
-        
-    } else {
+    if (screen.value.endsWith("/") !== true && screen.value.endsWith("*") !== true && screen.value.endsWith("-") !== true && screen.value.endsWith("+") !== true && screen.value.endsWith(".") !== true){
         screen.value += evvent
+        
     }
 })
 
@@ -52,23 +51,18 @@ function deletee() {
 
 function goal(e) {
     let evvent = e.target.innerHTML
+    evvent = 3.142
 
-    if (screen.value.endsWith("3.142")){
+    if (screen.value.endsWith("/") !== true && screen.value.endsWith("*") !== true && screen.value.endsWith("-") !== true && screen.value.endsWith("+") !== true && screen.value.endsWith(".") !== true){
+        screen.value = evvent
 
-
-    } else {
-        screen.value == evvent
-        screen.value += 3.142
     }
-
 }
 
 function naamess(e) {
     let evvent = e.target.innerHTML
 
-    if (screen.value.endsWith("/")){
-
-    } else {
+    if (screen.value.endsWith("/") !== true && screen.value.endsWith("*") !== true && screen.value.endsWith("-") !== true && screen.value.endsWith("+") !== true && screen.value.endsWith(".") !== true){
         screen.value += evvent
     }
     
@@ -77,10 +71,7 @@ function naamess(e) {
 function school(e) {
     let evvent = e.target.innerHTML
 
-
-    if (screen.value.endsWith("*")){
-
-    } else {
+    if (screen.value.endsWith("/") !== true && screen.value.endsWith("*") !== true && screen.value.endsWith("-") !== true && screen.value.endsWith("+") !== true && screen.value.endsWith(".") !== true){
         screen.value += evvent
     }
 }
@@ -88,8 +79,7 @@ function school(e) {
 function germ(e) {
     let evvent = e.target.innerHTML
 
-    if (screen.value.endsWith("-")){
-    } else {
+    if (screen.value.endsWith("/") !== true && screen.value.endsWith("*") !== true && screen.value.endsWith("-") !== true && screen.value.endsWith("+") !== true && screen.value.endsWith(".") !== true){
         screen.value += evvent
     }
 }
@@ -98,19 +88,15 @@ function boy(e) {
     let evvent = e.target.innerHTML
 
 
-    if (screen.value.endsWith("+")){
-
-    } else {
+    if (screen.value.endsWith("/") !== true && screen.value.endsWith("*") !== true && screen.value.endsWith("-") !== true && screen.value.endsWith("+") !== true && screen.value.endsWith(".") !== true){
         screen.value += evvent
+
     }
 }
 
 function chaange(e) {
     let evvent = e.target.innerHTML
-
-    if (screen.value.endsWith(".")){
-
-    } else {
+    if (screen.value.endsWith("/") !== true && screen.value.endsWith("*") !== true && screen.value.endsWith("-") !== true && screen.value.endsWith("+") !== true && screen.value.endsWith(".") !== true ) {
         screen.value += evvent
     }
 }
